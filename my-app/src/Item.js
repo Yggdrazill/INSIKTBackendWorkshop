@@ -23,7 +23,6 @@ export default function Item(props) {
 	if (props.funStuff) {
 		className = "FunStuff";
 	}
-	console.log(newCost);
 	
 	return (
 		<div className="Item">

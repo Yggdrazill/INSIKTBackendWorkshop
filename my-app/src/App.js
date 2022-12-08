@@ -11,7 +11,6 @@ export default function App(props) {
 	const [isAdmin, setAdmin] = useState(false);
 
 	const handleBuy = async (item, quantity) => {
-		console.log('hej');
 		const result = await fetch('https://localhost:7277/order', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
@@ -44,7 +43,6 @@ export default function App(props) {
 	}
 
 	const handleEditItem = async (id, cost) => {
-		console.log(cost);
 		const result = await fetch(`https://localhost:7277/Item/${id}`, {
 			method: 'PUT',
 			headers: { 'Content-Type': 'application/json' },
